@@ -9,8 +9,10 @@ int main()
 	//int s1 = contorCifrePare(1234);
 	//int s2 = contorCifreImpare(1123);
 
-	ex1();
-	 
+	//ex1();
+	//int s1 = ciframaxima(6574);
+	//cout << s1;
+	ex2();
 }
 
 

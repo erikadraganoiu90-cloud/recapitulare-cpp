@@ -60,3 +60,39 @@ void ex1() {
 	cout << "nr cifre pare=" << pare<<endl;
 	cout << "nr cifre impare=" << impare;
 }
+
+int ciframaxima(int n) {
+  int max = 0;
+   while (n > 0) {
+	  int cif = n % 10;
+	   if (cif > max) {
+		   max = cif;
+	   }
+	   n = n / 10;
+   }
+   return max;
+}
+
+int ciframinima(int n) {
+	int min = 10000;
+	while (n > 0) {
+		int cif = n % 10;
+		if (cif < min) {
+			min = cif;
+		}
+		n = n / 10;
+	}
+	return min;
+}
+
+void ex2() {
+	int n;
+	cout << "n=";
+	cin >> n;
+	int max = ciframaxima(n);
+	int min = ciframinima(n);
+	cout << "cea mai mare cifra=" << max<<endl;
+	cout << "cea mai mica cifra=" << min;
+}
+
+

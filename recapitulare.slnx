@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="recapitulare/recapitulare.vcxproj" />
+  <Project Path="recapitulare/recapitulare.vcxproj" Id="a9012e94-a6bb-4e45-86e5-bdcd3520042a" />
 </Solution>
