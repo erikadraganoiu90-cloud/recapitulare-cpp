@@ -12,7 +12,9 @@ int main()
 	//ex1();
 	//int s1 = ciframaxima(6574);
 	//cout << s1;
-	ex2();
+	//ex2();
+	int s1=eliminareaCifreiDeRangk(8459,2);
+	cout << s1;
 }
 
 

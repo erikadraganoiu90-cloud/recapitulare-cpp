@@ -94,5 +94,27 @@ void ex2() {
 	cout << "cea mai mare cifra=" << max<<endl;
 	cout << "cea mai mica cifra=" << min;
 }
+//n 8459
+//n!=0  uc   nou  p   n
+// da   9    9    10  845
+// da   5    59   100  84
+// da   4    459  1000  8
+// da   8    8459 10000 0
+// nu
 
-
+int eliminareaCifreiDeRangk(int n,int k) {
+	//algoritm de parcurgere al unui numar in aceasi ordine 
+	int  p = 1;
+	int nou = 0;
+	int ct = 0;
+	while (n != 0) {
+		int uc = n % 10;
+		if (ct!=k) {
+			nou = uc * p + nou;
+			p = p * 10;
+		}
+		n = n / 10;
+		ct++;
+	}
+	return nou;
+}
