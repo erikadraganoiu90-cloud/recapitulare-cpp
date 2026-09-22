@@ -23,5 +23,8 @@
     <ClInclude Include="lucrul-cifre.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="rezolvare-fisa-2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
