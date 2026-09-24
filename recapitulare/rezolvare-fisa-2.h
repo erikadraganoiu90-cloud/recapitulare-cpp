@@ -264,23 +264,22 @@ int cifreComune(int n, int m) {
 
 //Ex19
 int nrMax(int n) {
-	int max = 0;
-	int i = 0;
-	int x = n;
-	while (x > 0) {
-		i++;
-		x = x / 10;
-	}
-	while (i > 0) {
-        while (n > 0) {
+	int ct[10] = { 0 };
+	while (n > 0) {
 		int cif = n % 10;
-		if (cif >= max) {
-			max[i] = cif;
-		}
-		 n = n / 10;
-	     }
-		x=max*i+
-        i--;
+		ct[cif]++;
+		n = n / 10;
 	}
-	
+	int i = 9;
+	int x = 0;
+	while (i > 0) {
+		if (ct[i] != 0) {
+			x = i + x * 10;
+		}
+		i--;
+
+	}
+	return x;
 }
+
+ 

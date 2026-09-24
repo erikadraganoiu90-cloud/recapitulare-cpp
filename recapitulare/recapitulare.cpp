@@ -88,8 +88,12 @@ int main()
 	//cout << s1;
 
 	//Ex18
-	int s1 = cifreComune(4738, 8321);
-	cout << s1;
+	//int s1 = cifreComune(4738, 8321);
+	//cout << s1;
+
+	//Ex19
+	//int s1 = nrMax(2436);
+	//cout << s1;
 }
 
 
